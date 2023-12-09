@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <!--
-  Copyright (c) 2020 Qualcomm Technologies, Inc.
+  Copyright (c) 2021 Qualcomm Technologies, Inc.
   All Rights Reserved.
   Confidential and Proprietary - Qualcomm Technologies, Inc.
 -->
@@ -26,18 +26,81 @@ Full documentation at frameworks/base/data/etc/preinstalled-packages-platform.xm
 -->
 
 <config>
-    <install-in-user-type package="org.codeaurora.ims">
+
+    <!-- qcrilOemHook -->
+
+    <install-in-user-type package="com.qualcomm.qcrilmsgtunnel">
         <install-in user-type="SYSTEM" />
     </install-in-user-type>
+
+    <!-- telephony-apps -->
+
+    <install-in-user-type package="com.qti.telephonysettings">
+        <install-in user-type="SYSTEM" />
+    </install-in-user-type>
+
+    <install-in-user-type package="com.qualcomm.atfwd">
+        <install-in user-type="SYSTEM" />
+    </install-in-user-type>
+
+    <install-in-user-type package="com.qualcomm.qti.callfeaturessetting">
+        <install-in user-type="SYSTEM" />
+    </install-in-user-type>
+
     <install-in-user-type package="com.qualcomm.qti.confdialer">
         <install-in user-type="SYSTEM" />
         <install-in user-type="FULL" />
         <install-in user-type="PROFILE" />
     </install-in-user-type>
-    <install-in-user-type package="com.qualcomm.qti.telephonyservice">
-        <install-in user-type="SYSTEM" />
-    </install-in-user-type>
+
     <install-in-user-type package="com.qti.qualcomm.datastatusnotification">
         <install-in user-type="SYSTEM" />
     </install-in-user-type>
+
+    <install-in-user-type package="com.qti.qualcomm.deviceinfo">
+        <install-in user-type="SYSTEM" />
+    </install-in-user-type>
+
+    <install-in-user-type package="org.codeaurora.ims">
+        <install-in user-type="SYSTEM" />
+    </install-in-user-type>
+
+    <install-in-user-type package="org.codeaurora.qti.nrNetworkSettingApp">
+        <install-in user-type="SYSTEM" />
+    </install-in-user-type>
+
+    <install-in-user-type package="com.qualcomm.qti.telephonyservice">
+        <install-in user-type="SYSTEM" />
+    </install-in-user-type>
+
+    <install-in-user-type package="com.qualcomm.qti.sam.service">
+        <install-in user-type="SYSTEM" />
+    </install-in-user-type>
+
+    <install-in-user-type package="com.qti.xdivert">
+        <install-in user-type="SYSTEM" />
+        <install-in user-type="FULL" />
+    </install-in-user-type>
+
+    <!-- telephony-internal -->
+
+    <install-in-user-type package="com.qualcomm.qti.imsiprivacy.tests">
+        <install-in user-type="SYSTEM" />
+    </install-in-user-type>
+
+    <!-- telephony-noship -->
+
+    <install-in-user-type package="com.qualcomm.qti.devicestatisticsservice">
+        <install-in user-type="SYSTEM" />
+    </install-in-user-type>
+
+    <install-in-user-type package="com.qualcomm.embms">
+        <install-in user-type="SYSTEM" />
+    </install-in-user-type>
+
+    <install-in-user-type package="com.qualcomm.qti.euiccresource">
+        <install-in user-type="SYSTEM" />
+        <install-in user-type="FULL" />
+    </install-in-user-type>
+
  </config>

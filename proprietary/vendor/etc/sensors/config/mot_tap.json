@@ -9,7 +9,7 @@
     ".params":{
       "owner": "mot_tap",
       "prod_idx":{ "type": "int", "ver": "0",
-        "data": "2"
+        "data": "1"
       },
       "double_only":{ "type": "int", "ver": "0",
         "data": "0"

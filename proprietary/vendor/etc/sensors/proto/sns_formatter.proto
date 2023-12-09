@@ -1,8 +1,8 @@
-// @file sns_offset_formatter.proto
+// @file sns_formatter.proto
 //
 // Defines standard message types for the Offset/Formatter sensor
 //
-// Copyright (c) 2018 Qualcomm Technologies, Inc.
+// Copyright (c) 2018, 2020, 2022 Qualcomm Technologies, Inc.
 // All Rights Reserved.
 // Confidential and Proprietary - Qualcomm Technologies, Inc.
 syntax = "proto2";
@@ -15,10 +15,13 @@ enum sns_formatter_msgid {
 
   SNS_FORMATTER_MSGID_SNS_FORMATTER_REQUEST                = 512;
   SNS_FORMATTER_MSGID_SNS_FORMATTER_METRIC_DATA_REQUEST    = 513;
+  SNS_FORMATTER_MSGID_SNS_FORMATTER_BROADCAST_DATA_REQUEST = 514;
 
   SNS_FORMATTER_MSGID_SNS_FORMATTER_OUTPUT_EVENT           = 1024;
   SNS_FORMATTER_MSGID_SNS_FORMATTER_ACK_EVENT              = 1025;
-}
+  SNS_FORMATTER_MSGID_SNS_FORMATTER_OUTPUT_GOAL_EVENT      = 1026;
+  SNS_FORMATTER_MSGID_SNS_FORMATTER_OUTPUT_THRESHOLD_EVENT = 1027;
+ }
 
 enum sns_formatter_request_values {
   option (nanopb_enumopt).long_names = false;
@@ -28,7 +31,7 @@ enum sns_formatter_request_values {
   SNS_FORMATTER_REQUEST_CREATE   = 1;
   // Starts or resumes the update of the metric instances.
   SNS_FORMATTER_REQUEST_START    = 2;
-  // Pauses the update of the metric instances.
+  // Stops the update of the metric instances.
   SNS_FORMATTER_REQUEST_STOP     = 3;
   // Resets metric instance state.
   SNS_FORMATTER_REQUEST_RESET    = 4;
@@ -40,6 +43,8 @@ enum sns_formatter_request_values {
   SNS_FORMATTER_REQUEST_CONFIG_GET   = 7;
   // Updates the batch period at the client manager.
   SNS_FORMATTER_REQUEST_BATCH        = 8;
+  // Pauses the update of the metric instances
+  SNS_FORMATTER_REQUEST_PAUSE     = 9;
 }
 
 enum sns_formatter_status_values {
@@ -101,6 +106,11 @@ message sns_formatter_metric_data_request
   required bytes       metric_data  = 2;
 }
 
+message sns_formatter_broadcast_data_request
+{
+  required bytes broadcast_data = 1;
+}
+
 // Formatter output event
 // This event contains the formatted string output corresponding to the
 // metric requested by the client.
@@ -109,6 +119,40 @@ message sns_formatter_output_event
   required fixed32                      metric_id         = 1;
   required string                       formatted_output  = 2;
   required sns_formatter_output_event_payload  event_payload     = 3;
+}
+
+enum sns_formatter_goal_type
+{
+  option (nanopb_enumopt).long_names = false;
+
+  SNS_FORMATTER_GOAL_VALUE   = 1;
+  SNS_FORMATTER_GOAL_DURATION = 2;
+}
+
+
+message sns_formatter_output_goal_event
+{
+  required fixed32                      metric_id         = 1;
+  required sns_formatter_goal_type      goal_type         = 2;
+  oneof goal_data
+  {
+     fixed32 int_data   =3;     // Data can be goal value or duration. Goal_type is used to identify type of data.
+     float   float_data   =4;    // This is for goal value of float type. Ex: Algos like distance may set float values
+  }
+}
+
+enum sns_formatter_threshold_type
+{
+  option (nanopb_enumopt).long_names = false;
+
+  SNS_FORMATTER_HIGH_THRESHOLD_ACHIEVED =1;
+  SNS_FORMATTER_LOW_THRESHOLD_ACHIEVED=2;
+}
+
+message sns_formatter_output_threshold_event
+{
+  required fixed32                         metric_id         = 1;
+  required sns_formatter_threshold_type    th_type           = 2;
 }
 
 // Formatter acknowledge event
