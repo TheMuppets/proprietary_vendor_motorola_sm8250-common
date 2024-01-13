@@ -392,9 +392,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm8250-common/proprietary/vendor/firmware/a650_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a650_gmu.bin \
     vendor/motorola/sm8250-common/proprietary/vendor/firmware/a650_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a650_sqe.fw \
     vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_haptic.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_haptic.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor_ramdisk/lib/firmware/aw8695_haptic.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/firmware/aw8695_haptic.bin \
     vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw8695_rtp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8695_rtp.bin \
-    vendor/motorola/sm8250-common/proprietary/vendor_ramdisk/lib/firmware/aw8695_rtp.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/firmware/aw8695_rtp.bin \
     vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw882xx_mono.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw882xx_mono.bin \
     vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw882xx_rcv_reg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw882xx_rcv_reg.bin \
     vendor/motorola/sm8250-common/proprietary/vendor/firmware/aw882xx_spk_reg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw882xx_spk_reg.bin \
