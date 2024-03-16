@@ -942,10 +942,10 @@ PRODUCT_PACKAGES += \
     IWlanService \
     TimeService \
     com.qualcomm.qti.gpudrivers.kona.api30 \
-    PowerOffAlarm \
     uimgbaservice \
     IfaaService \
     ImsRcsService \
+    PowerOffAlarm \
     QtiTelephonyService \
     SoterService \
     WfdService \
