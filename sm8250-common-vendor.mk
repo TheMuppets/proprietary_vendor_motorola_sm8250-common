@@ -227,6 +227,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm8250-common/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
     vendor/motorola/sm8250-common/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc \
     vendor/motorola/sm8250-common/proprietary/vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.soter@1.0-service.rc \
+    vendor/motorola/sm8250-common/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
     vendor/motorola/sm8250-common/proprietary/vendor/etc/init/vendor.qti.qspmhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.qspmhal@1.0-service.rc \
     vendor/motorola/sm8250-common/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/motorola/sm8250-common/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
@@ -940,6 +941,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.rcsuce-V1.1-java \
     vendor.qti.ims.rcsuce-V1.2-java \
     android.hardware.neuralnetworks@1.3-service-qti.xml \
+    c2_manifest_vendor.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
     vendor.qti.gnss@4.0-service.xml
 
