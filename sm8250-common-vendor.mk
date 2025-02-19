@@ -473,7 +473,6 @@ PRODUCT_PACKAGES += \
     libcne \
     libcneapiclient \
     libcneoplookup \
-    libcneqmiutils \
     libconfigdb \
     libcpion \
     libdataitems \
@@ -485,7 +484,6 @@ PRODUCT_PACKAGES += \
     libdrmfs \
     libdrmtime \
     libdsi_netctrl \
-    libgdtap \
     libhdr_tm \
     libhdrdynamic \
     libhdrdynamicootf \
@@ -499,12 +497,10 @@ PRODUCT_PACKAGES += \
     liblbs_core \
     libloc_api_v02 \
     libloc_api_wds \
-    libloc_socket \
     liblocationservice \
     liblocationservice_glue \
     liblog_vendor \
     liblowi_client \
-    liblowi_wifihal \
     liblqe \
     libmdmcutback \
     libmdmimgload \
@@ -548,7 +544,6 @@ PRODUCT_PACKAGES += \
     libsensorcal \
     libsensorslog \
     libsettings \
-    libslimclient \
     libsns_device_mode_stub \
     libsns_fastRPC_util \
     libsns_low_lat_stream_stub \
