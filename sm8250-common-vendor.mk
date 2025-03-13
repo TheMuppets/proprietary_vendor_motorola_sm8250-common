@@ -277,6 +277,7 @@ PRODUCT_PACKAGES += \
     libAndroidAlgSys \
     libDxHdcp \
     libFileMux_proprietary \
+    libMAM2_3-AlgFX-Coretex_A9 \
     libacdb-fts \
     libacdbloader \
     libacdbrtac \
@@ -411,6 +412,7 @@ PRODUCT_PACKAGES += \
     liblocationservice_glue \
     liblog_vendor \
     liblowi_client \
+    liblowi_wifihal \
     liblqe \
     libmdmcutback \
     libmdmimgload \

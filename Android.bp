@@ -2609,6 +2609,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libMAM2_3-AlgFX-Coretex_A9",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libMAM2_3-AlgFX-Coretex_A9.so",
+            ],
+            shared_libs: [
+                "libAndroidAlgSys",
+                "liblog",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libacdb-fts",
     owner: "motorola",
     strip: {
@@ -6645,6 +6670,35 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "liblowi_wifihal",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/liblowi_wifihal.so",
+            ],
+            shared_libs: [
+                "liblowi_client",
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libgps.utils",
                 "libc++",
                 "libc",
                 "libm",
