@@ -534,30 +534,30 @@ PRODUCT_PACKAGES += \
     vendor.qti.latency@2.1 \
     vendor.qti.qspmhal@1.0-impl \
     vendor.zui.hardware.ifaa@1.0 \
-    capi_v2_aptX_CLHDADV_Encoder \
-    capi_v2_aptX_CLHDAD_Speech_Decoder \
-    libSuperSensor_skel \
-    libapps_mem_heap \
-    libbitml_nsp_skel \
-    libcamera_nn_skel \
-    libcvpdsp_skel \
-    libdspCV_skel \
-    libdsp_streamer_binning \
-    libeye_tracking_dsp_sample_skel \
-    libfastcvadsp \
-    libfastcvdsp_skel \
-    libhalide_hexagon_remote_skel \
-    libhexagon_nn_skel \
-    libqvr_3dof_tracker_skel \
-    libqvr_cam_dsp_driver_skel \
-    libqvr_dsp_driver_skel \
-    libscveObjectSegmentation_skel \
-    libscveT2T_skel \
-    libsns_device_mode_skel \
-    libsns_low_lat_stream_skel \
-    libtracker_6dof_skel_1130 \
-    libtracker_6dof_skel_8250 \
-    libtracker_6dof_skel_8350 \
+    vendor_lib_rfsa_adsp_capi_v2_aptX_CLHDADV_Encoder_so \
+    vendor_lib_rfsa_adsp_capi_v2_aptX_CLHDAD_Speech_Decoder_so \
+    vendor_lib_rfsa_adsp_libSuperSensor_skel_so \
+    vendor_lib_rfsa_adsp_libapps_mem_heap_so \
+    vendor_lib_rfsa_adsp_libbitml_nsp_skel_so \
+    vendor_lib_rfsa_adsp_libcamera_nn_skel_so \
+    vendor_lib_rfsa_adsp_libcvpdsp_skel_so \
+    vendor_lib_rfsa_adsp_libdspCV_skel_so \
+    vendor_lib_rfsa_adsp_libdsp_streamer_binning_so \
+    vendor_lib_rfsa_adsp_libeye_tracking_dsp_sample_skel_so \
+    vendor_lib_rfsa_adsp_libfastcvadsp_so \
+    vendor_lib_rfsa_adsp_libfastcvdsp_skel_so \
+    vendor_lib_rfsa_adsp_libhalide_hexagon_remote_skel_so \
+    vendor_lib_rfsa_adsp_libhexagon_nn_skel_so \
+    vendor_lib_rfsa_adsp_libqvr_3dof_tracker_skel_so \
+    vendor_lib_rfsa_adsp_libqvr_cam_dsp_driver_skel_so \
+    vendor_lib_rfsa_adsp_libqvr_dsp_driver_skel_so \
+    vendor_lib_rfsa_adsp_libscveObjectSegmentation_skel_so \
+    vendor_lib_rfsa_adsp_libscveT2T_skel_so \
+    vendor_lib_rfsa_adsp_libsns_device_mode_skel_so \
+    vendor_lib_rfsa_adsp_libsns_low_lat_stream_skel_so \
+    vendor_lib_rfsa_adsp_libtracker_6dof_skel_1130_so \
+    vendor_lib_rfsa_adsp_libtracker_6dof_skel_8250_so \
+    vendor_lib_rfsa_adsp_libtracker_6dof_skel_8350_so \
     libmmosal \
     libmmparser_lite \
     com.qualcomm.qti.dpm.api@1.0 \
